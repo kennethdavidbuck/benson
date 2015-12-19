@@ -2,10 +2,19 @@ export default function() {
 
   this.get('/posts', function() {
     return {
-      data: [],
+      data: [
+        {
+          id: 1,
+          type: 'post',
+          attributes: {
+            title: 'some title',
+            body: 'the body'
+          }
+        }
+      ],
       meta: {},
       "jsonapi": {
-        "version": "1.0"
+        "version": '1.0'
       }
     };
   });
