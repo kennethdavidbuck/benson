@@ -1,6 +1,8 @@
 export default function() {
 
-  this.get('/posts', function() {
+  this.namespace = 'api';
+
+  this.get('posts', function() {
     return {
       data: [
         {
