@@ -6,5 +6,7 @@ moduleForAcceptance('Acceptance | posts/index');
 test('visiting /posts/index', function(assert) {
   visit('/posts/index');
 
-  andThen(() => assert.equal(currentURL(), '/posts/index'));
+  andThen(function() {
+    assert.equal(currentURL(), '/posts/index');
+  });
 });
