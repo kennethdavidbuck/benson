@@ -5,9 +5,9 @@ const Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('posts', function () {
-    
+    this.route('post', {path: '/:id'});
   });
 });
 
