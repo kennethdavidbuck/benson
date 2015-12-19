@@ -9,8 +9,16 @@ export default function() {
           id: 1,
           type: 'post',
           attributes: {
-            title: 'some title',
-            body: 'the body'
+            title: 'first post',
+            body: 'first post body'
+          }
+        },
+        {
+          id: 2,
+          type: 'post',
+          attributes: {
+            title: 'second post body',
+            body: 'second post body'
           }
         }
       ],
