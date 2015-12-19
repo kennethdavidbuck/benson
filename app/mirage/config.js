@@ -10,6 +10,7 @@ export default function () {
 					type: 'post',
 					attributes: {
 						title: 'first post',
+						teaser: 'first teaser',
 						body: 'first post body'
 					}
 				},
@@ -18,6 +19,7 @@ export default function () {
 					type: 'post',
 					attributes: {
 						title: 'second post body',
+						teaser: 'second teaser',
 						body: 'second post body'
 					}
 				}
@@ -37,6 +39,7 @@ export default function () {
 
 				attributes: {
 					title: 'first post',
+					teaser: 'first teaser',
 					body: 'first post body'
 				}
 			},

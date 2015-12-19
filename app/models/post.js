@@ -10,6 +10,11 @@ export default DS.Model.extend({
 	title: attr('string'),
 
 	/**
+	 * @property teaser
+	 */
+	teaser: attr('string'),
+
+	/**
 	 * @property body
 	 */
 	body: attr('string')
