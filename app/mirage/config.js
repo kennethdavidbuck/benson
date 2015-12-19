@@ -1,5 +1,15 @@
 export default function() {
 
+  this.get('/posts', function() {
+    return {
+      data: [],
+      meta: {},
+      "jsonapi": {
+        "version": "1.0"
+      }
+    };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
