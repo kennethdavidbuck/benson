@@ -1,16 +1,10 @@
 <ul>
 	{{#each model as |post|}}
-		<div>
-			{{post.title}}
-		</div>
-		<div>
-			{{post.teaser}}
-		</div>
-		<div>
+		<li>
 			{{#link-to "posts.show" post.id}}
-				view post
+				{{post.title}}: {{post.teaser}}
 			{{/link-to}}
-		</div>
+		</li>
 	{{/each}}
 </ul>
 

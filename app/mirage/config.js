@@ -4,26 +4,17 @@ export default function () {
 
 	this.get('posts', function () {
 		return {
-			data: [
-				{
-					id: 1,
+			data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (id) {
+				return {
+					id: id,
 					type: 'post',
 					attributes: {
-						title: 'first post',
-						teaser: 'first teaser',
-						body: 'first post body'
+						title: 'post-' + id,
+						teaser: 'teaser-' + id,
+						body: 'body-' + id
 					}
-				},
-				{
-					id: 2,
-					type: 'post',
-					attributes: {
-						title: 'second post body',
-						teaser: 'second teaser',
-						body: 'second post body'
-					}
-				}
-			],
+				};
+			}),
 			meta: {},
 			jsonapi: {
 				"version": '1.0'
@@ -31,16 +22,18 @@ export default function () {
 		};
 	});
 
-	this.get('posts/:id', function () {
+	this.get('posts/:id', function (db, request) {
+		var id = request.params.id;
+
 		return {
 			data: {
-				id: 1,
+				id: request.params.id,
 				type: 'post',
 
 				attributes: {
-					title: 'first post',
-					teaser: 'first teaser',
-					body: 'first post body'
+					title: 'post-' + id,
+					teaser: 'teaser-' + id,
+					body: 'body-' + id
 				}
 			},
 			meta: {},
