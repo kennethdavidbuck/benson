@@ -6,5 +6,9 @@ export default DS.JSONAPIAdapter.extend({
 
   shouldReloadAll() {
     return true;
+  },
+
+  shouldBackgroundReloadRecord() {
+    return true;
   }
 });

@@ -23,7 +23,25 @@ export default function() {
         }
       ],
       meta: {},
-      "jsonapi": {
+      jsonapi: {
+        "version": '1.0'
+      }
+    };
+  });
+
+  this.get('posts/:id', function () {
+    return {
+      data: {
+        id: 1,
+        type: 'post',
+
+        attributes: {
+          title: 'first post',
+          body: 'first post body'
+        }
+      },
+      meta: {},
+      jsonapi: {
         "version": '1.0'
       }
     };

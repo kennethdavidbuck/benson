@@ -5,4 +5,9 @@
   <div>
       {{post.body}}
   </div>
+  <div>
+  {{#link-to "posts.show" post.id}}
+    view post
+  {{/link-to}}
+  </div>
 {{/each}}
