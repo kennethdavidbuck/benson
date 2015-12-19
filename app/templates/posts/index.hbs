@@ -1,13 +1,16 @@
-{{#each model as |post|}}
-  <div>
-     {{post.title}}
-  </div>
-  <div>
-      {{post.body}}
-  </div>
-  <div>
-  {{#link-to "posts.show" post.id}}
-    view post
-  {{/link-to}}
-  </div>
-{{/each}}
+<ul>
+	{{#each model as |post|}}
+		<div>
+			{{post.title}}
+		</div>
+		<div>
+			{{post.body}}
+		</div>
+		<div>
+			{{#link-to "posts.show" post.id}}
+				view post
+			{{/link-to}}
+		</div>
+	{{/each}}
+</ul>
+

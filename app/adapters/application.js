@@ -2,13 +2,13 @@ import DS from 'ember-data';
 
 export default DS.JSONAPIAdapter.extend({
 
-  namespace: 'api',
+	namespace: 'api',
 
-  shouldReloadAll() {
-    return true;
-  },
+	shouldReloadAll() {
+		return true;
+	},
 
-  shouldBackgroundReloadRecord() {
-    return true;
-  }
+	shouldBackgroundReloadRecord() {
+		return true;
+	}
 });
