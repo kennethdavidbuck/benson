@@ -1,3 +1,23 @@
-<h2 id="title">Welcome to Benson</h2>
+<header class="app-bar fixed-top" data-role="appbar">
+	<div class="container">
+		<span class="app-bar-divider"></span>
+		{{#link-to "index" class="app-bar-element branding"}}Benson{{/link-to}}
+		<span class="app-bar-divider"></span>
+		{{#link-to "posts.index" class="app-bar-element"}}Posts{{/link-to}}
+		<span class="app-bar-pull"></span>
 
-{{outlet}}
+		<div class="app-bar-pullbutton automatic" style="display: none;"></div>
+		<div class="clearfix" style="width: 0;"></div>
+		<nav class="app-bar-pullmenu hidden flexstyle-app-bar-menu" style="display: none;">
+			<ul class="app-bar-pullmenubar hidden app-bar-menu"></ul>
+		</nav>
+	</div>
+</header>
+
+<div class="container page-content">
+	<div class="grid">
+		<div class="row">
+			{{outlet}}
+		</div>
+	</div>
+</div>
