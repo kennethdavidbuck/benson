@@ -39,5 +39,10 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-lodash": "0.0.5"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/metro-ui"
+    ]
   }
 }
