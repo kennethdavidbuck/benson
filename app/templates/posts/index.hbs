@@ -1,11 +1,22 @@
-<h1>Posts</h1>
+<div class="grid">
+	<div class="row cells12">
+		<div class="cell colspan8">
+			<h1>Posts</h1>
 
-<ul class="simple-list">
-	{{#each model as |post|}}
-		<li>
-			{{#link-to "posts.show" post.id}}
-				{{post.title}}: {{post.teaser}}
-			{{/link-to}}
-		</li>
-	{{/each}}
-</ul>
+			<section>
+				<ul class="simple-list">
+					{{#each model as |post|}}
+						<li>
+							{{#link-to "posts.show" post.id}}
+								{{post.title}}: {{post.teaser}}
+							{{/link-to}}
+						</li>
+					{{/each}}
+				</ul>
+			</section>
+		</div>
+		<div class="cell colspan4">
+			Right Spot
+		</div>
+	</div>
+</div>
