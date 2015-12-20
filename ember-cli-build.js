@@ -3,8 +3,27 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-	var app = new EmberApp(defaults, {
-		// Add options here
+	var app = new EmberApp(defaults);
+
+	// bring in fonts TODO: convert this to a directory import
+	app.import('bower_components/metro/fonts/metro.eot', {
+		destDir: 'assets/fonts'
+	});
+
+	app.import('bower_components/metro/fonts/metro.svg', {
+		destDir: 'assets/fonts'
+	});
+
+	app.import('bower_components/metro/fonts/metro.ttf', {
+		destDir: 'assets/fonts'
+	});
+
+	app.import('bower_components/metro/fonts/metro.woff', {
+		destDir: 'assets/fonts'
+	});
+
+	app.import('bower_components/metro/fonts/selection.json', {
+		destDir: 'assets/fonts'
 	});
 
 	// Use `app.import` to add additional libraries to the generated
