@@ -11,7 +11,7 @@ test('it exists', function (assert) {
 	assert.ok(controller);
 });
 
-test('groups posts into tiles', function (assert) {
+test('maps posts into tiles', function (assert) {
 	assert.expect(1);
 
 	const post = {id: 1, title: 'foo'};
