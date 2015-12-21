@@ -1,21 +1,7 @@
 {{#metro-tile-area}}
 	{{#metro-tile-group}}
-		{{metro-tile size="large"}}
-		{{metro-tile size="wide"}}
-		{{metro-tile}}
-		{{metro-tile}}
-		{{metro-tile}}
-		{{metro-tile}}
-		{{metro-tile size="wide"}}
-	{{/metro-tile-group}}
-
-	{{#metro-tile-group}}
-		{{metro-tile size="large"}}
-		{{metro-tile size="wide"}}
-		{{metro-tile}}
-		{{metro-tile}}
-		{{metro-tile}}
-		{{metro-tile size="wide"}}
-		{{metro-tile}}
+		{{#each postTiles as |postTile|}}
+			{{metro-tile size=postTile.size}}
+		{{/each}}
 	{{/metro-tile-group}}
 {{/metro-tile-area}}
