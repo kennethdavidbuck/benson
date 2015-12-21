@@ -20,5 +20,5 @@ test('maps posts into tiles', function (assert) {
 		model: [post]
 	});
 
-	assert.deepEqual(controller.get('tiles'), [{id: 1, title: 'foo', size: 'large'}]);
+	assert.deepEqual(controller.get('tiles'), [{id: 1, title: 'foo', href: '/posts/1', size: 'large'}]);
 });
