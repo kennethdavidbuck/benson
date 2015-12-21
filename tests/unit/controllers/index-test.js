@@ -20,5 +20,5 @@ test('groups posts into tiles', function (assert) {
 		model: [post]
 	});
 
-	assert.deepEqual(controller.get('postTiles'), [{size: 'large', post: post}]);
+	assert.deepEqual(controller.get('tiles'), [{size: 'large', post: post}]);
 });
