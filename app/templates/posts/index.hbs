@@ -4,8 +4,11 @@
 	{{#metro-tile-group}}
 		{{#each tiles as |tile|}}
 			{{#metro-tile size="large"}}
-				{{#link-to "posts.show" tile.id class="tile-content"}}
-					{{tile.title}}
+				{{#link-to "posts.show" tile.id class="tile-content zooming"}}
+					<div class="slide">
+						<img src="http://loremflickr.com/310/310/dog">
+					</div>
+					<div class="tile-label">{{tile.title}}</div>
 				{{/link-to}}
 			{{/metro-tile}}
 		{{/each}}
