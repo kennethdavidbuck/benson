@@ -3,9 +3,7 @@
 		{{#each tiles as |tile|}}
 			{{#metro-tile size=tile.size}}
 				{{#link-to "posts.show" tile.id class="tile-content"}}
-					<div class="slide">
-						{{tile.title}}
-					</div>
+					{{tile.title}}
 				{{/link-to}}
 			{{/metro-tile}}
 		{{/each}}
