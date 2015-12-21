@@ -1,7 +1,7 @@
 {{#metro-tile-area}}
 	{{#metro-tile-group}}
 		{{#each tiles as |tile|}}
-			{{#metro-tile size=tile.size content=tile.title}}
+			{{#metro-tile size=tile.size}}
 				{{#link-to "posts.show" tile.id class="tile-content"}}
 					{{tile.title}}
 				{{/link-to}}

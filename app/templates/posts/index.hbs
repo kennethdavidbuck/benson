@@ -1,22 +1,13 @@
-<div class="grid">
-	<div class="row cells12">
-		<div class="cell colspan8">
-			<h1>Posts</h1>
+<h1>Posts</h1>
 
-			<section>
-				<ul class="simple-list">
-					{{#each model as |post|}}
-						<li>
-							{{#link-to "posts.show" post.id}}
-								{{post.title}}: {{post.teaser}}
-							{{/link-to}}
-						</li>
-					{{/each}}
-				</ul>
-			</section>
-		</div>
-		<div class="cell colspan4">
-			Right Spot
-		</div>
-	</div>
-</div>
+{{#metro-tile-area}}
+	{{#metro-tile-group}}
+		{{#each tiles as |tile|}}
+			{{#metro-tile size="large"}}
+				{{#link-to "posts.show" tile.id class="tile-content"}}
+					{{tile.title}}
+				{{/link-to}}
+			{{/metro-tile}}
+		{{/each}}
+	{{/metro-tile-group}}
+{{/metro-tile-area}}
