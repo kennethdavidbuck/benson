@@ -8,9 +8,7 @@ const sizes = ['large', 'wide', 'square', 'square', 'square', 'square', 'wide',
 export default Ember.Controller.extend({
 	tiles: Ember.computed.map('model', function (post, index) {
 		const tile = getProperties(post, 'id', 'title');
-
 		tile.size = sizes[index % sizes.length];
-
 		return tile;
 	})
 });
