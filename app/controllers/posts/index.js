@@ -4,6 +4,6 @@ const {computed, getProperties} = Ember;
 
 export default Ember.Controller.extend({
 	tiles: computed.map('model', function (post) {
-		return getProperties(post, 'id', 'title');
+		return getProperties(post, 'id', 'title', 'teaser');
 	})
 });
