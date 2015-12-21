@@ -14,11 +14,11 @@ test('it exists', function (assert) {
 test('groups posts into tiles', function (assert) {
 	assert.expect(1);
 
-	const post = {};
+	const post = {id: 1, title: 'foo'};
 
 	const controller = this.subject({
 		model: [post]
 	});
 
-	assert.deepEqual(controller.get('tiles'), [{size: 'large', post: post}]);
+	assert.deepEqual(controller.get('tiles'), [{id: 1, title: 'foo', size: 'large'}]);
 });
