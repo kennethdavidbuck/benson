@@ -1,13 +1,16 @@
-<h1>Welcome</h1>
-
-{{!--#metro-tile-area}}
+{{#metro-tile-area}}
 	{{#metro-tile-group}}
-		{{#each tiles as |tile|}}
-			{{#metro-tile size=tile.size}}
-				{{#link-to "posts.show" tile.id class="tile-content"}}
-					{{tile.title}}
+		{{#each model as |tile|}}
+			{{#metro-tile size="large"}}
+				{{#link-to "posts.show" tile.id class="tile-content slide-left"}}
+					<div class="slide bg-cyan fg-white">
+						<p>{{tile.title}}</p>
+					</div>
+					<div class="slide-over ribbed-black fg-white">
+						<p>{{tile.teaser}}</p>
+					</div>
 				{{/link-to}}
 			{{/metro-tile}}
 		{{/each}}
 	{{/metro-tile-group}}
-{{/metro-tile-area--}}
+{{/metro-tile-area}}
