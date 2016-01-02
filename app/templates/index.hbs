@@ -4,14 +4,14 @@
 			{{#each model as |article|}}
 				<article>
 					<header>
+						<h2 class="sub-header">
+							Jan 01, 2015
+						</h2>
 						<h1>
 							{{#link-to "posts.show" article.id}}
 								{{article.title}}
 							{{/link-to}}
 						</h1>
-						<h2 class="sub-header">
-							{{article.teaser}}
-						</h2>
 					</header>
 					<div class="content">
 						<p>
