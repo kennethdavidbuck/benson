@@ -1,6 +1,8 @@
 <header class="container">
 	<h1 class="leader">
-		Kenneth Buck
+		{{#link-to "index"}}
+			Kenneth Buck
+		{{/link-to}}
 	</h1>
 	<h2 class="sub-header">
 		Software Developer
@@ -9,10 +11,13 @@
 
 {{#metro-app-bar class="bg-grayDark"}}
 	<div class="container">
-		{{#link-to "index" class="app-bar-element branding"}}
+		{{#link-to "posts.index" class="app-bar-element"}}
+			Archives
+		{{/link-to}}
+		{{!--#link-to "index" class="app-bar-element branding"}}
 			<span class="mif-home mif-2x"></span>
 		{{/link-to}}
-		{{#link-to "posts" class="app-bar-element posts"}}Posts{{/link-to}}
+		{{#link-to "posts" class="app-bar-element posts"}}Posts{{/link-to--}}
 	</div>
 {{/metro-app-bar}}
 
