@@ -1,80 +1,39 @@
 <div class="grid">
 	<div class="row cells9">
 		<div class="cell colspan8">
-			<article>
-				<header>
-					<h1>{{#link-to "index"}}Article 1{{/link-to}}</h1>
-					<h2 class="sub-header">foo bar bax</h2>
-				</header>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet magna a ex maximus venenatis. Proin
-						ac
-						magna enim. Quisque semper eros et libero porttitor faucibus. Nulla consequat ac orci quis malesuada. Proin
-						sem
-						massa, euismod sit amet lectus sit amet, varius viverra dui. Quisque laoreet elit ut urna varius, vulputate
-						dapibus velit iaculis. Nam sed orci non diam sodales vehicula. Maecenas at faucibus dui.
-					</p>
+			{{#each model as |article|}}
+				<article>
+					<header>
+						<h1>
+							{{#link-to "posts.show" article.id}}
+								{{article.title}}
+							{{/link-to}}
+						</h1>
+						<h2 class="sub-header">
+							{{article.teaser}}
+						</h2>
+					</header>
+					<div class="content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet magna a ex maximus venenatis. Proin
+							ac
+							magna enim. Quisque semper eros et libero porttitor faucibus. Nulla consequat ac orci quis malesuada. Proin
+							sem
+							massa, euismod sit amet lectus sit amet, varius viverra dui. Quisque laoreet elit ut urna varius, vulputate
+							dapibus velit iaculis. Nam sed orci non diam sodales vehicula. Maecenas at faucibus dui.
+						</p>
 
-					<p>
-						In hac habitasse platea dictumst. Nulla nec nulla magna. Aliquam non tellus vitae dolor eleifend ultrices ut
-						a
-						lacus. Suspendisse potenti. Nam augue lacus, varius eu venenatis sit amet, faucibus sit amet magna. Proin
-						lacinia, sapien ut rutrum pharetra, mauris sem consequat nisi, id rhoncus dui justo quis tellus. Quisque
-						placerat tristique velit quis gravida.
+						<p>
+							In hac habitasse platea dictumst. Nulla nec nulla magna. Aliquam non tellus vitae dolor eleifend ultrices ut
+							a
+							lacus. Suspendisse potenti. Nam augue lacus, varius eu venenatis sit amet, faucibus sit amet magna. Proin
+							lacinia, sapien ut rutrum pharetra, mauris sem consequat nisi, id rhoncus dui justo quis tellus. Quisque
+							placerat tristique velit quis gravida.
 
-					</p>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h1>{{#link-to "index"}}Article 2{{/link-to}}</h1>
-					<h2 class="sub-header">foo bar bax</h2>
-				</header>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet magna a ex maximus venenatis. Proin
-						ac
-						magna enim. Quisque semper eros et libero porttitor faucibus. Nulla consequat ac orci quis malesuada. Proin
-						sem
-						massa, euismod sit amet lectus sit amet, varius viverra dui. Quisque laoreet elit ut urna varius, vulputate
-						dapibus velit iaculis. Nam sed orci non diam sodales vehicula. Maecenas at faucibus dui.
-					</p>
-
-					<p>
-						In hac habitasse platea dictumst. Nulla nec nulla magna. Aliquam non tellus vitae dolor eleifend ultrices ut
-						a
-						lacus. Suspendisse potenti. Nam augue lacus, varius eu venenatis sit amet, faucibus sit amet magna. Proin
-						lacinia, sapien ut rutrum pharetra, mauris sem consequat nisi, id rhoncus dui justo quis tellus. Quisque
-						placerat tristique velit quis gravida.
-
-					</p>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h1>{{#link-to "index"}}Article 3{{/link-to}}</h1>
-					<h2 class="sub-header">foo bar bax</h2>
-				</header>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet magna a ex maximus venenatis. Proin
-						ac
-						magna enim. Quisque semper eros et libero porttitor faucibus. Nulla consequat ac orci quis malesuada. Proin
-						sem
-						massa, euismod sit amet lectus sit amet, varius viverra dui. Quisque laoreet elit ut urna varius, vulputate
-						dapibus velit iaculis. Nam sed orci non diam sodales vehicula. Maecenas at faucibus dui.
-					</p>
-
-					<p>
-						In hac habitasse platea dictumst. Nulla nec nulla magna. Aliquam non tellus vitae dolor eleifend ultrices ut
-						a
-						lacus. Suspendisse potenti. Nam augue lacus, varius eu venenatis sit amet, faucibus sit amet magna. Proin
-						lacinia, sapien ut rutrum pharetra, mauris sem consequat nisi, id rhoncus dui justo quis tellus. Quisque
-						placerat tristique velit quis gravida.
-					</p>
-				</div>
-			</article>
+						</p>
+					</div>
+				</article>
+			{{/each}}
 		</div>
 	</div>
 </div>
