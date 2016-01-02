@@ -3,10 +3,10 @@ import moduleForAcceptance from 'benson/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | index');
 
-test('visiting /index', function(assert) {
-  visit('/index');
+test('visiting /', function (assert) {
+	visit('/');
 
-  andThen(function() {
-    assert.equal(currentURL(), '/index');
-  });
+	andThen(function () {
+		assert.equal(currentURL(), '/');
+	});
 });
