@@ -3,10 +3,10 @@ import moduleForAcceptance from 'benson/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | about');
 
-test('visiting /about', function(assert) {
-  visit('/about');
+test('visiting /about', function (assert) {
+	visit('/about');
 
-  andThen(function() {
-    assert.equal(currentURL(), '/about');
-  });
+	andThen(function () {
+		assert.equal(currentURL(), '/about');
+	});
 });
