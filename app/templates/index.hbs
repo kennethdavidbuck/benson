@@ -1,7 +1,7 @@
 {{#metro-tile-area}}
 	{{#metro-tile-group}}
 		{{#each model as |tile|}}
-			{{#metro-tile size="large"}}
+			{{#metro-tile size="large" class="block-shadow-impact"}}
 				{{#link-to "posts.show" tile.id class="tile-content slide-left"}}
 					<div class="slide bg-cyan fg-white">
 						<p>{{tile.title}}</p>
