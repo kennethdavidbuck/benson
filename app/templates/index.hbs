@@ -5,7 +5,7 @@
 				<article>
 					<header>
 						<h2 class="sub-alt-header no-margin-top">
-							{{article.createdAt}}
+							{{moment-format article.createdAt}}
 						</h2>
 						<h1>
 							{{#link-to "posts.show" article.id}}
