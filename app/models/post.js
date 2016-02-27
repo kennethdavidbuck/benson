@@ -17,5 +17,15 @@ export default DS.Model.extend({
 	/**
 	 * @property body
 	 */
-	body: attr('string')
+	body: attr('string'),
+
+	/**
+	 * @property createdAt
+	 */
+	createdAt: attr('date'),
+
+	/**
+	 * @property updatedAt
+	 */
+	updateAt: attr('date')
 });
