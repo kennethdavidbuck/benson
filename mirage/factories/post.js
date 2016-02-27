@@ -8,7 +8,9 @@ import Mirage, {faker} from 'ember-cli-mirage';
 export default Mirage.Factory.extend({
 	title: faker.lorem.sentence,
 	teaser: faker.lorem.sentence,
-	body: faker.lorem.paragraphs
+	body: faker.lorem.paragraphs,
+	createdAt: faker.date.past,
+	updatedAt: faker.date.recent
 
 	// name: 'Pete',                         // strings
 	// age: 20,                              // numbers
