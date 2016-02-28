@@ -9,27 +9,12 @@
 						</h2>
 						<h1>
 							{{#link-to "posts.show" article.id}}
-								{{article.title}}
+								{{{article.title}}}
 							{{/link-to}}
 						</h1>
 					</header>
 					<div class="content">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet magna a ex maximus venenatis. Proin
-							ac
-							magna enim. Quisque semper eros et libero porttitor faucibus. Nulla consequat ac orci quis malesuada. Proin
-							sem
-							massa, euismod sit amet lectus sit amet, varius viverra dui. Quisque laoreet elit ut urna varius, vulputate
-							dapibus velit iaculis. Nam sed orci non diam sodales vehicula. Maecenas at faucibus dui.
-						</p>
-
-						<p>
-							In hac habitasse platea dictumst. Nulla nec nulla magna. Aliquam non tellus vitae dolor eleifend ultrices ut
-							a
-							lacus. Suspendisse potenti. Nam augue lacus, varius eu venenatis sit amet, faucibus sit amet magna. Proin
-							lacinia, sapien ut rutrum pharetra, mauris sem consequat nisi, id rhoncus dui justo quis tellus. Quisque
-							placerat tristique velit quis gravida.
-						</p>
+						{{{article.teaser}}}
 					</div>
 					{{#if article.categories.length}}
 						<div class="tags">
