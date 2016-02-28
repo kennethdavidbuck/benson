@@ -10,7 +10,7 @@ export default function (server) {
 	//});
 
 	server.create('post', {
-		title: 'My First Post',
+		title: 'About Me',
 		teaser: `<p>
 			Kenneth is a recovering <a href="http://www.joelonsoftware.com/articles/fog0000000018.html"
 			target="_blank">architect astronaut</a>,
