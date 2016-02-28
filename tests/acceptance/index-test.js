@@ -34,3 +34,28 @@ test('clicking a post presents posts page with full post', function (assert) {
 		assert.strictEqual(find('.page-content article').length, 1, 'should have one article on the page');
 	});
 });
+
+test('displays categories when present', function (assert) {
+	assert.expect(1);
+
+	var post = server.create('post');
+	post.categories = [server.create('category')];
+
+	visit('/');
+
+	andThen(function () {
+		assert.strictEqual(find('.page-content article .tag.info').length, 1, 'article should display 1 category');
+	});
+});
+
+test('does not display tags container when article has no tags', function (assert) {
+	assert.expect(1);
+
+	server.create('post');
+
+	visit('/');
+
+	andThen(function () {
+		assert.strictEqual(find('.page-content article .tags').length, 0, 'tags container should not be displayed');
+	});
+});

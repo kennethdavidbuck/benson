@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-const {attr} = DS;
+const {attr, hasMany} = DS;
 
 export default DS.Model.extend({
 
@@ -27,5 +27,10 @@ export default DS.Model.extend({
 	/**
 	 * @property updatedAt
 	 */
-	updateAt: attr('date')
+	updateAt: attr('date'),
+
+	/**
+	 * @property categories
+	 */
+	categories: hasMany('category', {async: true})
 });
