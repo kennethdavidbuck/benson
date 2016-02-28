@@ -14,7 +14,7 @@
 						</h1>
 					</header>
 					<div class="content">
-						{{{article.teaser}}}
+						{{{article.teaser}}} {{#link-to "posts.show" article.id}}[read more]{{/link-to}}
 					</div>
 					{{#if article.categories.length}}
 						<div class="tags">
