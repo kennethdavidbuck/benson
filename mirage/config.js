@@ -5,6 +5,9 @@ export default function () {
 	this.get('posts', 'post');
 	this.get('posts/:id', 'post');
 
+	this.get('categories', 'category');
+	this.get('categories/:id', 'category');
+
 	// These comments are here to help you get started. Feel free to delete them.
 
 	/*

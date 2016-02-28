@@ -32,5 +32,5 @@ export default DS.Model.extend({
 	/**
 	 * @property categories
 	 */
-	categories: hasMany('category')
+	categories: hasMany('category', {async: true})
 });

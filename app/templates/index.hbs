@@ -31,12 +31,15 @@
 							placerat tristique velit quis gravida.
 						</p>
 					</div>
-					<div class="tags">
-						<span class="tag success">categories</span>
-						<span class="tag info">foo</span>
-						<span class="tag info">bar</span>
-						<span class="tag info">baz</span>
-					</div>
+					{{#if article.categories.length}}
+						<div class="tags">
+							<span class="tag success">categories</span>
+
+							{{#each article.categories as |category|}}
+								<span class="tag info">{{category.title}}</span>
+							{{/each}}
+						</div>
+					{{/if}}
 				</article>
 			{{/each}}
 		</div>
