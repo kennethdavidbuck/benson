@@ -9,21 +9,8 @@ export default function (server) {
 	//	post.categories = [categories[index]]
 	//});
 
-	server.create('post', {
-		title: 'About Me',
-		teaser: `<p>
-			Kenneth is a recovering <a href="http://www.joelonsoftware.com/articles/fog0000000018.html"
-			target="_blank">architect astronaut</a>,
-			based out of Toronto, Ontario. Back on earth, he spends his recovery time playing foosball, drinking
-			coffee, and browsing hacker news.
-			</p>
-			<p>
-			He finished his first degree in Archaeology in 2008 only to realize
-			how much he loved computers. He knew he had "no choice" but to head back to school
-			for a second degree in Computer Science. He has been helplessly addicted
-			to software and programming ever since.
-			</p>`,
-		body: `<p>
+	var post = `
+		<p>
 			Kenneth is a recovering <a href="http://www.joelonsoftware.com/articles/fog0000000018.html"
 			target="_blank">architect astronaut</a>,
 			based out of Toronto, Ontario. Back on earth, he spends his recovery time playing foosball, drinking
@@ -55,7 +42,12 @@ export default function (server) {
 			the lookout
 			for his next big adventure. You can reach him at <a href="mailto:kenneth@kennethbuck.ca">kenneth@kennethbuck.ca</a>
 			for opportunities and inquiries.
-			</p>`,
+		</p>`;
+
+	server.create('post', {
+		title: 'About Me',
+		teaser: post,
+		body: post,
 		createdAt: moment('2016-02-28')
 	});
 }
