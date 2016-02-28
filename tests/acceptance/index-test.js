@@ -17,7 +17,7 @@ test('visiting /', function (assert) {
 	});
 });
 
-test('clicking a post presents posts page with full post', function (assert) {
+test('clicking a post title presents posts page with full post', function (assert) {
 	assert.expect(2);
 
 	server.createList('post', 5);
@@ -26,6 +26,24 @@ test('clicking a post presents posts page with full post', function (assert) {
 
 	andThen(function () {
 		click('.page-content article:first a');
+	});
+
+	andThen(function () {
+		assert.equal(currentURL(), '/posts/1', 'should be in posts show route');
+
+		assert.strictEqual(find('.page-content article').length, 1, 'should have one article on the page');
+	});
+});
+
+test('clicking read more link presents posts page with full post', function (assert) {
+	assert.expect(2);
+
+	server.createList('post', 5);
+
+	visit('/');
+
+	andThen(function () {
+		click('.page-content article:first .content a:last');
 	});
 
 	andThen(function () {
