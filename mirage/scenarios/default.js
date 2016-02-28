@@ -55,6 +55,7 @@ export default function (server) {
 			the lookout
 			for his next big adventure. You can reach him at <a href="mailto:kenneth@kennethbuck.ca">kenneth@kennethbuck.ca</a>
 			for opportunities and inquiries.
-			</p>`
+			</p>`,
+		createdAt: moment('2016-02-28')
 	});
 }
