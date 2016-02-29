@@ -14,9 +14,9 @@ install:
 - npm install
 - bower install
 script:
+- ember build --environment=production
 - npm test
 deploy:
-  script: deploy.sh
   provider: s3
   skip_cleanup: true
   access_key_id: AKIAJGVITZIKV3S4AO7A
