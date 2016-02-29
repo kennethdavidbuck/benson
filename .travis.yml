@@ -14,8 +14,9 @@ install:
 - npm install
 - bower install
 script:
-- ember build --environment=production
 - ember test --environment=production
+after_success:
+- ember build --environment=production
 deploy:
   provider: s3
   skip_cleanup: true
