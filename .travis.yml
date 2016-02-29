@@ -27,9 +27,9 @@ deploy:
     local-dir: dist
     upload-dir: develop-builds
     acl: public_read
-      on:
-        repo: kennethdavidbuck/benson
-        branch: develop
+    on:
+      repo: kennethdavidbuck/benson
+      branch: develop
   - provider: s3
     skip_cleanup: true
     access_key_id: AKIAJGVITZIKV3S4AO7A
