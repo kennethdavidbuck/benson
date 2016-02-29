@@ -18,7 +18,7 @@ script:
 after_success:
 - ember build --environment=production
 deploy:
-- provider: s3
+  provider: s3
   skip_cleanup: true
   access_key_id: AKIAJGVITZIKV3S4AO7A
     secret_access_key:
@@ -30,7 +30,7 @@ deploy:
     on:
       repo: kennethdavidbuck/benson
       branch: develop
-- provider: s3
+  provider: s3
   skip_cleanup: true
   access_key_id: AKIAJGVITZIKV3S4AO7A
   secret_access_key:
