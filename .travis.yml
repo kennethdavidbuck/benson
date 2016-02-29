@@ -22,6 +22,6 @@ install:
 script:
   - npm test
 
-deploy:
-  provider: s3
-  skip_cleanup: true
+addons:
+  artifacts: true
+  s3_region: "us-east-1"
