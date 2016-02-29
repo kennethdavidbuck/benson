@@ -22,7 +22,7 @@ deploy:
   secret_access_key:
     secure: OWM39oAhDXpdNFXk51g6ZMsjpzou/NWYdlpO0EN/djQEyO60n0BH86YMiEtycEVbcSHiCn2Cg33Q76pLoVLkRI2rbM6E7oWn8m7jpg0uk6jG/M73HlFOiPcx/yysr4Y14llIub6rPdb76+r91uRhczHZ3vZhkfksvnr8NyTG6UD6SzQy27oM8sowzIW37k9kzS8u2weOD4x/e4T025jaPE7jjnZ0RtAROYwYWZwcJHT7Qy3z/6ZM3rZzfMbK7quRJ54FAJQtQXes/+Cco7Ew3q84sBrBD+V7R4kGKj6gTnBBXstUBInNpccctKiGL25tVSXAiX9K1J+w820aP/V/ZyNyOnpuVlUKh+zGRG+U1bNFwXKNIiKU5v7HbJnKSGtb1tpnhcLJRC6PkIl4ahwozJd3OINu0lPrJ9i5WD52ePuDxqsJc2AbgOSdQ3JjeyYapkpBy1RKjd41Q8YLBHxdU4yuHcbcjg1qjBAr0agrnptCGpYm+1otKQx7wN1iqnu1W0JgrGLGu8lA1WGZ+spTnsLPo1THRJKccerPUUSkEIqp+4PaPe8Gf23uyWMJxbXtLnt0YajY6++zh9qOAC6bnFBVjEeF7EgwQTN65PmtPDCsQyGPGtgbTgaf979OOz1S1mCx2AAuOkLUjTPfuCLaG/7qibg2ijUGL3z2Dp4iUx4=
   bucket: www.kennethbuck.ca
-  local-dir: /home/travis/build/kennethdavidbuck/benson/dist
+  local-dir: dist
   acl: public_read
   on:
     repo: kennethdavidbuck/benson
