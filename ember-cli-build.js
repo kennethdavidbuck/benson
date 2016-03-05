@@ -6,7 +6,8 @@ module.exports = function (defaults) {
 	var app = new EmberApp(defaults, {
 		fingerprint: {
 			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/develop-builds/',
-			extensions: ['js', 'css', 'png', 'jpg', 'gif', 'woff', 'eot', 'svg', 'ttf']
+			extensions: ['js', 'css', 'png', 'jpg', 'gif', 'woff', 'eot', 'svg', 'ttf'],
+			customHash: null
 		}
 	});
 
