@@ -27,6 +27,7 @@ deploy:
     local-dir: dist
     upload-dir: develop-builds
     acl: public_read
+    cache_control: "max-age=31536000"
     on:
       repo: kennethdavidbuck/benson
       branch: develop
@@ -39,6 +40,7 @@ deploy:
     local-dir: dist
     upload-dir: master-builds
     acl: public_read
+    cache_control: "max-age=31536000"
     on:
       repo: kennethdavidbuck/benson
       branch: master
