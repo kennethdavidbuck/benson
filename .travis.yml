@@ -14,7 +14,7 @@ install:
 - npm install
 - bower install
 script:
-- ember test --environment=production
+- ember test
 after_success:
 - ember build --environment=production
 deploy:

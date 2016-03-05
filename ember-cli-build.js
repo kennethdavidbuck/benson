@@ -3,7 +3,11 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-	var app = new EmberApp(defaults);
+	var app = new EmberApp(defaults, {
+		fingerprint: {
+			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/develop-builds/'
+		}
+	});
 
 	// bring in fonts TODO: convert this to a directory import
 	app.import('bower_components/metro/fonts/metro.eot', {
