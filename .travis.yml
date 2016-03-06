@@ -16,7 +16,7 @@ install:
 script:
 - ember test
 after_success:
-- ember build --environment=production
+- ./build.sh
 deploy:
   - provider: s3
     skip_cleanup: true
