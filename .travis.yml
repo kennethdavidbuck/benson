@@ -28,6 +28,7 @@ deploy:
     upload-dir: develop-builds
     acl: public_read
     cache_control: "max-age=31536000"
+    detect_encoding: true
     on:
       repo: kennethdavidbuck/benson
       branch: develop
@@ -41,6 +42,7 @@ deploy:
     upload-dir: master-builds
     acl: public_read
     cache_control: "max-age=31536000"
+    detect_encoding: true
     on:
       repo: kennethdavidbuck/benson
       branch: master
