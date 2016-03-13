@@ -19,9 +19,10 @@ module.exports = function (environment) {
 		},
 
 		analyticskit: {
+			enabled: true,
 			google: {
-				appId: 'UA-75008396-1',
-				enabled: true
+				enabled: true,
+				trackingId: 'UA-75008396-1'
 			}
 		}
 	};
@@ -52,6 +53,7 @@ module.exports = function (environment) {
 		};
 
 		ENV['analyticskit'] = {
+			enabled: true,
 			google: {
 				enabled: true
 			}
