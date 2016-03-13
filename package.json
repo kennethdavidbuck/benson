@@ -47,7 +47,8 @@
   },
   "ember-addon": {
     "paths": [
-      "lib/metro-ui"
+      "lib/metro-ui",
+      "lib/analyticskit"
     ]
   }
 }
