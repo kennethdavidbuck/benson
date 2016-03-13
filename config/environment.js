@@ -19,9 +19,8 @@ module.exports = function (environment) {
 		},
 
 		analyticskit: {
-			enabled: true,
+			providers: ['google'],
 			google: {
-				enabled: true,
 				trackingId: 'UA-75008396-1'
 			}
 		}
@@ -53,10 +52,7 @@ module.exports = function (environment) {
 		};
 
 		ENV['analyticskit'] = {
-			enabled: true,
-			google: {
-				enabled: true
-			}
+			providers: ['google']
 		};
 	}
 
