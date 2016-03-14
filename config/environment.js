@@ -19,10 +19,7 @@ module.exports = function (environment) {
 		},
 
 		analyticskit: {
-			providers: ['logger'],
-			google: {
-				trackingId: 'UA-75008396-1'
-			}
+			providers: ['logger']
 		}
 	};
 
@@ -52,7 +49,10 @@ module.exports = function (environment) {
 		};
 
 		ENV['analyticskit'] = {
-			providers: ['google']
+			providers: ['google'],
+			google: {
+				trackingId: 'UA-75008396-1'
+			}
 		};
 	}
 
