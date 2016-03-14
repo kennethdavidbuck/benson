@@ -19,7 +19,7 @@ module.exports = function (environment) {
 		},
 
 		analyticskit: {
-			providers: ['logger'],
+			providers: ['google'],
 			google: {
 				trackingId: 'UA-75008396-1'
 			}
