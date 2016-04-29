@@ -1,12 +1,13 @@
 /*jshint node:true*/
 /* global require, module, process*/
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var GIT_TAG = process.env.GIT_TAG;
 
 module.exports = function (defaults) {
 	var app = new EmberApp(defaults, {
 		fingerprint: {
 			exclude: ['fonts'],
-			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/develop-builds/' + process.env.GIT_TAG + '/'
+			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/benson-builds/' + GIT_TAG + '/'
 		}
 	});
 
