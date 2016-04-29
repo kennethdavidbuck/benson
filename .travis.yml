@@ -7,7 +7,7 @@ cache:
   - node_modules
 before_install:
   # Grab Benson Package Version
-- export PACKAGE_VERSION=node -e "console.log(require('./package.json').version);"
+- export PACKAGE_VERSION=$(node -e "console.log(require('./package.json').version);")
   # Git Sha
 - export GIT_TAG=$(git rev-parse HEAD)
   # s3 Path
