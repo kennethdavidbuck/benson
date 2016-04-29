@@ -6,7 +6,7 @@ cache:
   directories:
   - node_modules
 before_install:
-- export GIT_TAG=$(git rev-parse --short HEAD)
+- export GIT_TAG=$(git rev-parse HEAD)
 - export ASSET_PATH=benson-builds/$GIT_TAG
 - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
 - npm config set spin false
