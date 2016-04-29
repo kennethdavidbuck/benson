@@ -6,6 +6,7 @@ cache:
   directories:
   - node_modules
 before_install:
+- export GIT_TAG=$(git rev-parse HEAD)
 - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
 - npm config set spin false
 - npm install -g npm@^2
@@ -16,7 +17,6 @@ install:
 script:
 - ember test
 after_success:
-- GIT_TAG=$(git rev-parse HEAD)
 - ./build.sh
 deploy:
   - provider: s3
