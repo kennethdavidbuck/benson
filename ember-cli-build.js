@@ -1,13 +1,13 @@
 /*jshint node:true*/
 /* global require, module, process*/
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var ASSET_PATH = process.env.ASSET_PATH;
+var BUILD_PATH = process.env.BUILD_PATH;
 
 module.exports = function (defaults) {
 	var app = new EmberApp(defaults, {
 		fingerprint: {
 			exclude: ['fonts'],
-			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/' + ASSET_PATH + '/'
+			prepend: 'https://s3.amazonaws.com/www.kennethbuck.ca/' + BUILD_PATH + '/'
 		}
 	});
 
